@@ -9,7 +9,7 @@ tqdm4.64.0
 1、create the config file of dataset:train.txt, val.txt and test.txt,the file structure is as follows:  
 ``path-of-the-image   path-of-the-groundtruth``  
 2、modify the config.py according to your requirements  
-3、train a network:  
+3、train a network  
 ### Distributed Training  
 We use the official torch.distributed.launch in order to launch multi-gpu training. This utility function from PyTorch spawns as many Python processes as the number of GPUs we want to use, and each Python process will only use a single GPU.  
 For each experiment, you can just run this script:  
