@@ -6,10 +6,11 @@ torchvision0.11.2+cu113
 easydict1.9  
 tqdm4.64.0  
 ## Training
-1、create the config file of dataset:train.txt, val.txt and test.txt,the file structure is as follows:  
+1、Create the config file of dataset:train.txt, val.txt and test.txt,the file structure is as follows:  
 ``path-of-the-image   path-of-the-groundtruth``  
-2、modify the config.py according to your requirements  
-3、train a network  
+Refer to ``furnace/tools/generate_source.py`` for reference  
+2、Modify the config.py according to your requirements  
+3、Train a network  
 ### Distributed Training  
 We use the official torch.distributed.launch in order to launch multi-gpu training. This utility function from PyTorch spawns as many Python processes as the number of GPUs we want to use, and each Python process will only use a single GPU.  
 For each experiment, you can just run this script:  
