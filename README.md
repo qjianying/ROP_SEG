@@ -16,5 +16,5 @@ We use the official torch.distributed.launch in order to launch multi-gpu traini
 For each experiment, you can just run this script:  
 ```export NGPUS=2```  
 ```python -m torch.distributed.launch --nproc_per_node=$NGPUS train.py```  
-## Inference
 ``python eval.py``
+## Inference
